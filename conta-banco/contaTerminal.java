@@ -23,7 +23,7 @@ public class contaTerminal {
                 System.out.println("sua agência é " + numeroAgencia + ", conta " + numeroConta + "e seu saldo é R$" + saldoConta);
 
                 System.out.println("\nDeseja cadastrar um novo cliente? (1 para sim, 2 para não): ");
-                int opcao = lerNumero(Scanner);
+                int opcao = lerNumero(scanner);
                 if (opcao == 2) {
                     continuar = false;
                 }
@@ -38,7 +38,7 @@ public class contaTerminal {
     private static int lerNumero(Scanner scanner) {
         while (true) {
             try {
-                return integer.parseInt(scanner.nextLine());
+                return Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
                 System.out.print("Número inválido. Por favor, insira um número: ");
             }
