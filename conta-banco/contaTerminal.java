@@ -11,13 +11,13 @@ public class contaTerminal {
                 int numeroAgencia = lerNumero(scanner);
 
                 System.out.print("Digite o número da Conta: ");
-                int numeroConta = lerNumero(Scanner);
+                int numeroConta = lerNumero(scanner);
 
                 System.out.print("Digite o nome do Cliente: ");
-                String nomeCliente = lerNomeCliente(Scanner);
+                String nomeCliente = lerNomeCliente(scanner);
 
-                System.out.print("Digite o saldo da Conta: ")
-                double saldoConta = lerNumeroDecimal(Scanner);
+                System.out.print("Digite o saldo da Conta: ");
+                double saldoConta = lerNumeroDecimal(scanner);
 
                 System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, ");
                 System.out.println("sua agência é " + numeroAgencia + ", conta " + numeroConta + "e seu saldo é R$" + saldoConta);
@@ -61,7 +61,7 @@ public class contaTerminal {
             if (nome.matches("[a-zA-Z]+")) {
                 return nome;
             } else {
-                System.out.print("Nome inválido. Por favor, insira apenas letras: ")
+                System.out.print("Nome inválido. Por favor, insira apenas letras: ");
             }
         }
     }
