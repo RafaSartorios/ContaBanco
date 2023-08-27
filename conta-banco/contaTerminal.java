@@ -19,7 +19,7 @@ public class contaTerminal {
                 System.out.print("Digite o saldo da Conta: ");
                 double saldoConta = lerNumeroDecimal(scanner);
 
-                System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, ");
+                System.out.println("\nOlá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, ");
                 System.out.println("sua agência é " + numeroAgencia + ", conta " + numeroConta + "e seu saldo é R$" + saldoConta);
 
                 System.out.println("\nDeseja cadastrar um novo cliente? (1 para sim, 2 para não): ");
